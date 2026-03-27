@@ -2,12 +2,13 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 
-import { ListaNombres } from './Componets/ListaNombres';
+import { Calculadora } from './Componets/Calculadora';
 // import { App } from './App';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ListaNombres />
+    <Calculadora />
     {/* <App /> */}
   </StrictMode>
 );
