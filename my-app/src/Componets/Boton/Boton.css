@@ -1,0 +1,14 @@
+button{
+    border:none;
+    border-radius: 1rem;
+    background-color: var(--terciario);
+    font-size: 2rem;
+    aspect-ratio: 1/1;
+}
+button.gris{
+    background-color: var(--secundario);
+}
+button.operacion{
+    background-color: var(--primario);
+    color: #fff;
+}

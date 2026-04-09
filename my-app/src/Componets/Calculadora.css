@@ -1,15 +1,12 @@
 body{
     background-color: #f0f0f0;
-
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-h1{
-    color:black;
-}
+
 .contenedor_calculadora{
     background-color: #b6b6b6;
     padding: 2rem;
@@ -34,4 +31,9 @@ input{
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
     grid-template-rows: repeat(5, 60px);  /* 5 filas */
     gap: 10px;
+}
+spam{
+    grid-column: span 4;
+    text-align: right;
+
 }
