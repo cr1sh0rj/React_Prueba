@@ -1,14 +1,12 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './index.css';
+    
+import { CrudApp } from './Componets/Crud/CrudApp';
 
-import { Calculadora } from './Componets/Calculadora';
-// import { App } from './App';
-
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Calculadora />
-    {/* <App /> */}
-  </StrictMode>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>   
+      <CrudApp  />
+  </React.StrictMode>
 );
