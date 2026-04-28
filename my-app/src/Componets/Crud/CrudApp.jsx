@@ -15,14 +15,14 @@ export const CrudApp = ()=>{
 
     // Hook para manejar la base de datos en equipos queda toda la base
     const [equipos, setEquipos] = useState(baseDatos);
-    const add = (equipo) =>{
+    const addEquipos = (equipo) =>{
         setEquipos([...equipos, equipo])
     }
     return(
         <div>
             <h2>Crud Equipos de futbol</h2>
             {/* Formulario para los datos */}
-                <CrudForm add={add}/>
+                <CrudForm addEquipos={addEquipos}/>
 		    {/* Aqui inserto la variable equipos */}
                 <CrudTable equipos={equipos}/>
         </div>
