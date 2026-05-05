@@ -1,4 +1,5 @@
-export const CrudTable = ({equipos})=>{
+import React from "react";
+export const CrudTable = ({equipos, setEditData, deleteEquipos})=>{
     return(
         <div>
             <h2>Equipos Actuales</h2>
@@ -15,10 +16,12 @@ export const CrudTable = ({equipos})=>{
                             return(                                
                                     <tr key={index}>
                                         <td>{equipo.id}</td>
-                                        <td>{equipo.equipo}</td>
-                                        <td>{equipo.pais}</td>
-                                        <td><button className="btn btn-primary mx-2">Editar</button></td>
-                                        <td><button className="btn btn-danger mx-2">Eliminar</button></td>
+                                        <td align="left">{equipo.equipo}</td>
+                                        <td align="left">{equipo.pais}</td>
+                                        <td><button className="btn btn-warning mx-2" onClick={() => setEditData(equipo)}>Editar</button>
+                                        </td>
+                                        <td><button  className="btn btn-danger mx-2" onClick={() => deleteEquipos(equipo.id)}>Eliminar</button>
+                                        </td>
                                     </tr>
                                 
                                     )
